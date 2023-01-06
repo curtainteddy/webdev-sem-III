@@ -1,2 +1,2 @@
 # webdev-sem-III
-Repository for third semester Web Development class.
+Repository for third semester Web Development training.
