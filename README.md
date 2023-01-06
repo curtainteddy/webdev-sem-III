@@ -15,19 +15,19 @@ To set up your project, follow these steps:
 
 2. Next, clone the repository to your local machine:
 
-git clone https://github.com/curtainteddy/webdev-sem-III.git
+`git clone https://github.com/curtainteddy/webdev-sem-III.git`
 
 
 3. Navigate to the project directory:
 
-cd webdev-sem-III
+`cd webdev-sem-III`
 
 4. Initialize and install the dependencies:
 
-npm init
-npm install nodemon
+`npm init`
+`npm install nodemon`
 
 
 5. Run the project:
-npm run dev 
+`npm run dev` 
 (nodemon is required)
