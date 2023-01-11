@@ -92,7 +92,39 @@ let myFemaleFriends = myFriends.slice(-3);
 console.log('My Female Friends: ' + myFemaleFriends);
 console.log();
 
+
+// Creating functions
+function getFullName(firstName, lastName){
+    return firstName +  ' ' + lastName;
+}
+
+// Invoking functions
+console.log(getFullName('Shyam','Bahadur'))
+
+
+function introParagraph(firstName, lastName, age){
+    // return 'My name is '+ firstName +  ' ' + lastName + '. I am ' + age + ' years old.';
+    return `My name is ${firstName} ${lastName}. My age is ${age}.`;
+}
+
+console.log(introParagraph('Ram','Sharma','🤔'));
+console.log();
+
+
 // Using forEach method to use functions on each element
 myMaleFriends.forEach((element,index) => console.log(element,index));
 console.log();
 myFemaleFriends.forEach((element,index) => console.log(element,index));
+
+
+const helloWorld = () => {
+    return 'hello world';
+}
+
+console.log(helloWorld());
+
+
+let someNumbers = [1,2,3,4,5,6,7,8,9,10];
+someNumbers.forEach((element) => console.log(element*100));
+
+
