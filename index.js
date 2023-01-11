@@ -116,15 +116,45 @@ myMaleFriends.forEach((element,index) => console.log(element,index));
 console.log();
 myFemaleFriends.forEach((element,index) => console.log(element,index));
 
-
+// Using arrow function
 const helloWorld = () => {
     return 'hello world';
 }
-
 console.log(helloWorld());
 
 
+// Using arrow functions with forEach on an array
 let someNumbers = [1,2,3,4,5,6,7,8,9,10];
 someNumbers.forEach((element) => console.log(element*100));
+console.log();
+
+
+
+
+
+// Using callback function
+function puraaNaamPattaLagau(pahiloNaam, antimNaam, puraaNaamCb){
+    return puraaNaamCb(`${pahiloNaam} ${antimNaam}`);
+}
+
+
+function naamLaiUpperBanau(name){
+    return name.toUpperCase();
+}
+
+let puraNaam = puraaNaamPattaLagau('Peshal','Sedhai', naamLaiUpperBanau);
+console.log(puraNaam);
+
+
+let fruits = ['apple','banana','orange','mango','pineapple']; 
+let fruitsShake =  fruits.map((value, index) => value + " shake");
+
+
+console.log(fruitsShake);
+
+
+
+
+
 
 
