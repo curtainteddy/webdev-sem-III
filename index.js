@@ -153,8 +153,191 @@ let fruitsShake =  fruits.map((value, index) => value + " shake");
 console.log(fruitsShake);
 
 
+// Operators 
+
+let testvalue = 'hello';
+if(!testvalue)
+{
+    console.log('heilo');
+}
+
+
+if (true){
+    console.log("This is true")
+} else {
+    console.log();
+}
+console.log();
+
+
+// Creating objects
+let myIntroduction = {
+    name: 'peshal',
+    age: 20,
+    address: 'kathmandu',
+    email:'peshalsedhai@gmail.com',
+    phoneNumber: '984-123-4567',
+    isCute: true,
+}
+
+
+
+console.log(`My name is ${myIntroduction.name}. 
+I am ${myIntroduction.age} years old. 
+I live in ${myIntroduction.address}.
+My email is ${myIntroduction.email}. 
+My phone number is ${myIntroduction.phoneNumber}. 
+Am I chad? ${myIntroduction.isCute}.`);
+
+// delte am i chad property
+
+delete myIntroduction.isCute;
+
+// add new property
+
+myIntroduction.isLearningJs = true;
+
+
+console.log(`He's learning JS, ${myIntroduction.isLearningJs}.`)
+
+
+// make an object and a nested object inside of it. use const and variable be birdNest
+
+const birdNest = {
+    bird: {
+        name: 'Lil Birdy',
+        feathers: 'white',
+        color: 'black',
+        isCute: true,
+    },
+
+    breed: {
+        name: 'Parrot',
+        canSpeak: true,
+        canFly: true,
+        kingdom:{
+            name: 'Animalia',
+            phylum: 'Chordata',
+            class: 'Aves',
+            order: 'Psittaciformes',
+            family: 'Psittacidae',
+        }
+    }
+}
+
+
+// console log all the properties in a table format
+
+console.log(`Bird Name: ${birdNest.bird.name}
+Bird Feathers: ${birdNest.bird.feathers}
+Bird Color: ${birdNest.bird.color}
+Bird is Cute: ${birdNest.bird.isCute}
+Breed Name: ${birdNest.breed.name}
+Breed can Speak: ${birdNest.breed.canSpeak}
+Breed can Fly: ${birdNest.breed.canFly}
+Kingdom Name: ${birdNest.breed.kingdom.name}
+Phylum Name: ${birdNest.breed.kingdom.phylum}
+Class Name: ${birdNest.breed.kingdom.class}
+Order Name: ${birdNest.breed.kingdom.order}
+Family Name: ${birdNest.breed.kingdom.family}`);
+
+
+
+console.log(birdNest['bird']['name']);
+console.log(birdNest['breed']['kingdom']['family']);
+
+
+// Using the object.keys and object.values methods
+// To get Object keys as an array:
+const birdNestKeys = Object.keys(birdNest);
+
+// To get values as an array
+const birdNestValues = Object.values(birdNest);
+
+console.log();
+console.log(birdNestKeys);
+console.log(birdNestValues);
+console.log();
+
+
+// Using the for in loop to iterate through an object
+
+for (let birdNestKeys in birdNest){
+    console.log(birdNestKeys);
+}
+console.log();
+
+for (let birdNestKeys in birdNest){
+    // console.log(birdNest[birdNestKeys]);
+    console.log(`${birdNestKeys}: ${birdNest[birdNestKeys]}`);
+}
+
+
+// Self timeout function
+// console.log(`oneSecTimeout initiating`);
+// let oneSecTimeout =  setTimeout(function example() {
+// 	console.log('One second has passed');
+// },1000);
 
 
 
 
+
+// let timeout = setTimeout
+// (function(argument){console.log(`${argument}`);}, 1000, "IIMS");
+
+// Self interval function
+// let i = 0;
+// const timeCounter = setInterval(() => {
+//     i++;
+//     console.log(`${i} seconds have passed`);
+//     if (i === 5){
+//         clearInterval(timeCounter);
+//     }
+// },1000);
+
+
+// Making a second counter that keeps on checking if the first counter has reached 5 seconds
+// let j =0;
+// const timeCounter2 = setInterval(() => {
+//     j++;
+//     if (i === 5){
+//         clearInterval(timeCounter);
+//     }
+// },1000);
+
+
+
+const hihello = ['hello','hi'];
+hihello.push('hey');
+console.log(hihello);
+
+hihello.shift();
+console.log(hihello);
+
+
+// write a examplePromise function 
+
+// function examplePromise(){
+//     return new Promise((resolve, reject) => {
+//         resolve ('Promise resolved');
+//     });
+// }
+
+
+// examplePromise().then((result) => console.log(result));
+
+
+
+// write example promise then result console log result, catch error as error and finally as this will always run
+const examplePromise1 = () => {
+    return new Promise((resolve, reject) => {
+        resolve('Promise resolved');
+    });
+};
+
+examplePromise1()
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error))
+    .finally(() => console.log('This will always run'));
 
